@@ -1,10 +1,9 @@
 import React from "react";
-import { SafeAreaView, StyleSheet, View } from "react-native";
+import {  StyleSheet, View } from "react-native";
 import { SegmentedButtons } from "react-native-paper";
 
 export default function TodoFilters(props) {
   const [value, setValue] = React.useState("allTodos");
-  //   console.log(value);
   props.getfiltedData(value);
   return (
     <View style={styles.todoFilters}>

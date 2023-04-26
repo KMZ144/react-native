@@ -33,9 +33,7 @@ export default function TodoItem(props) {
     props.onStatusChange(updatedTodoItem, index);
   };
 
-  // const handleDialog = () => {
-  //   setRemoveTodoDialogVisible(true);
-  // };
+
   return (
     <TouchableRipple
       onPress={() => navigation.navigate("TodoDescription", todoItem)}
